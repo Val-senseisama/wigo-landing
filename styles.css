@@ -1,0 +1,422 @@
+body {
+    width: 100vw;
+    max-width: 100dvw !important;
+    overflow-x: hidden;
+}
+
+.green-text {
+    color: #56862A !important;
+}
+
+.green-button {
+    background-color: #56862A ;
+    color: #fff ;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 70px;
+    border: 1px solid #56862A;
+}
+
+.navbar-brand{
+    height: 35px;
+    width: 208px;
+}
+
+.navbar{
+    padding: 30px;
+}
+
+
+.gradient-section {
+    background: linear-gradient(to right, #F3FAEB, #FFFAEC);
+}
+
+.v-dash {
+    position: absolute;
+  left: 50%;
+  top: 20px;
+  bottom: 20px;
+  border-left: 2px dashed #ccc;
+}
+
+.big-text {
+    font-size: 64px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.red-text {
+    color: #EB5A1C;
+}
+
+.landing-img{
+    height: 363px;
+    width: 323px;
+}
+
+.special {
+    position: relative;
+    right: 200px;
+}
+
+.md-text{
+    font-size: 20px;
+}
+
+.test, .top-shop{
+    margin: 0 80px;
+}
+
+.test img {
+    width: 50%;   /* shrink width by half */
+  height: auto;
+  }
+
+  .top-shop img {
+    width: 50%;   /* shrink width by half */
+  background-color: #fff;
+  border-radius: 90%;
+  }
+      
+
+  .test img:nth-child(3), .test img:last-child  {
+    width: 40%; 
+    height: 230px !important;
+  }
+  
+
+.round-card {
+   border-radius :48px;
+   padding:  50px;
+   background: linear-gradient(
+  180deg,                            /* direction: top to bottom */
+  rgba(255, 255, 255, 0.2) 0%,       /* start: white at 20% opacity */
+  rgba(230, 242, 213, 0.2) 100%      /* end: light green at 20% opacity */
+
+);
+  width:500px;
+  height: 491px;
+  
+}
+
+.round-card p {
+font-family: "Hind", sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 154%;
+letter-spacing: 0%;
+text-transform: capitalize;
+
+}
+
+.gold-ball {
+    width: 12px;
+height: 12px;
+opacity: 1;
+border-radius: 100px;
+background-color: #D9C119;
+}
+
+.step-number {
+    background-color: #EBF7F3;
+    height: 71px;
+    width: 71px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  
+  .vertical-dashed-line {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    bottom: 20px;
+    border-left: 2px dashed #ccc;
+    transform: translateX(-50%);
+  }
+  
+  .phone, .step-card {
+    height: 423px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .step-card {
+    max-width:  531px;
+  }
+
+  .step-card p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .step-card h4 {
+    font-family: "Hind", sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: capitalize;
+
+  }
+
+  section.users img{
+width: 641px;
+height: auto;
+  }
+
+  section.users h4 {
+    font-family: "Hind", sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0%;
+
+  }
+
+  section.users p {
+    font-family: "Hind", sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 31px;
+letter-spacing: 0%;
+text-transform: capitalize;
+
+  }
+
+  section.testimonials h3{
+    font-family: "Hind", sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 48px;
+line-height: 105%;
+letter-spacing: 0%;
+text-align: center;
+
+    
+  }
+
+  @media (max-width: 767.98px) {
+    .vertical-dashed-line {
+      display: none;
+    }
+    .phone-placeholder {
+      display: none;
+    }
+  }
+
+  /* Testimonial Card Styles */
+  .testimonial-card {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(230, 242, 213, 0.2) 100%);
+    border-radius: 24px;
+    padding: 24px;
+    max-width: 500px;
+    margin: 30px auto 0;
+  }
+  
+  .testimonial-inner {
+    border-radius: 16px;
+    text-align: center;
+  }
+  
+  .stars {
+    color: #FFA500;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: start;
+    gap: 2px;
+  }
+  
+  .stars i {
+    color: #FFD43B;
+    font-size: 1.5em;
+  }
+  
+  .quote {
+    color: #333;
+    margin-bottom: 24px;
+    font-style: italic;
+
+    font-family: "Hind" sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+line-height: 140%;
+letter-spacing: 0%;
+
+  }
+  
+  .user {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+  }
+  
+  .user-avatar {
+    width: 70px;
+    height: 70px;
+    opacity: 1;
+    border-radius: 100px;
+    background-color: #D9D9D9;
+    overflow: hidden;
+  }
+  
+  .user-info h4 {
+    margin: 0;
+    color: #333;
+    text-align: left;
+    font-family: "Hind" sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: 0%;
+
+  }
+  
+  .user-info p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    font-family: "Hind" sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+
+  /* FAQ Section */
+  .faq-section {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(230, 242, 213, 0.2) 100%);
+    padding: 80px 0;
+  }
+  
+  .faq-section h2 {
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .faq-categories {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .faq-categories .btn {
+    margin: 0 10px;
+    border-radius: 50px;
+    width: 235px;
+    padding: 10px 25px;
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    border: none;
+    color: #56862A;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-categories .btn:hover,
+  .faq-categories .btn.active {
+    background-color: #56862A;
+    color: white;
+    
+  }
+  
+  .accordion {
+    width: 768px;
+    margin: 0 auto;
+  }
+  
+  .accordion-item {
+    border: none;
+    border-radius: 12px !important;
+    margin-bottom: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    background-color: transparent !important;
+  }
+  
+  .accordion-button {
+    font-family: "Hind", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    padding: 20px 25px;
+    background: white;
+    box-shadow: none;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: #56862A;
+    background-color: white;
+  }
+  
+  .accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+  }
+  
+  .accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2356862A'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+  
+  .accordion-body {
+    padding: 0 25px 20px;
+    font-family: "Hind", sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+
+
+  .faq-container {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(230, 242, 213, 0.2) 100%);
+  }
+
+  .form-title {
+    font-family: "Inter", sans-serif;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 40px;
+line-height: 100%;
+letter-spacing: 0%;
+
+  }
+
+  .last  {
+   color: #666666;
+   font-family: "Hind", sans-serif  ;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: -0.1px;
+
+  }
+
+  .icon-circle{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border:  1px solid #666666;
+  }
