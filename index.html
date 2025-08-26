@@ -133,12 +133,12 @@
       </section>
 
       <section class="w-100 py-5 d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
-        <div class=" round-card">
+        <div class="round-card scroll-animate-left">
             <h1 class="big-text red-text mb-5">About Us</h1>
             <p>wiGO MARKET is a campus-based marketplace built for students, by students. We connect buyers, vendors, and riders in one trusted platform that makes shopping, selling, and delivery seamless within universities.</p>
         </div>
 
-        <div class=" round-card">
+        <div class="round-card scroll-animate-right">
             <div class="py-md-5 mx-auto px-md-5">
                 <h3 class="green-text mb-5">Our Mission</h3>
                 <p>to empower student entrepreneurs, make campus shopping safer and faster, and create earning opportunities for riders.</p>
@@ -237,9 +237,9 @@
 
         
         <div class="d-flex flex-column flex-md-row align-items-center gap-5">
-          <img src="./images/people/buyer.png" alt="" class="px-3 img-fluid order-2 order-md-1">
+          <img src="./images/people/buyer.png" alt="" class="px-3 img-fluid order-2 order-md-1 scroll-animate-left">
 
-          <div class="d-flex flex-column justify-content-center align-items-center align-items-md-end px-3 order-1 order-md-2">
+          <div class="d-flex flex-column justify-content-center align-items-center align-items-md-end px-3 order-1 order-md-2 scroll-animate-right">
             <div class="d-flex align-items-center gap-3 justify-content-center mb-3">
               <div class="gold-ball"></div>
                       <h4 class="text-center">Shop Anything, Anytime on Campus</h4>
@@ -256,7 +256,7 @@
 
 
         <div class="d-flex flex-column flex-md-row align-items-center gap-5">
-          <div class="d-flex flex-column justify-content-center align-items-center align-items-md-end px-3 order-1 order-md-1">
+          <div class="d-flex flex-column justify-content-center align-items-center align-items-md-end px-3 order-1 order-md-1 scroll-animate-left">
             <div class="d-flex align-items-center gap-3 justify-content-center mb-3">
               <div class="gold-ball"></div>
                       <h4 class="text-center">Turn Your Products Into Profits</h4>
@@ -270,16 +270,16 @@
           </button>
           </div> 
           
-          <img src="./images/people/seller.png" alt="" class="px-3 img-fluid order-2 order-md-2">
+          <img src="./images/people/seller.png" alt="" class="px-3 img-fluid order-2 order-md-2 scroll-animate-right">
 
         
         </div>
       
       
         <div class="d-flex flex-column flex-md-row align-items-center gap-5">
-          <img src="./images/people/dispatch.png" alt="" class="px-3 img-fluid order-2 order-md-1">
+          <img src="./images/people/dispatch.png" alt="" class="px-3 img-fluid order-2 order-md-1 scroll-animate-left">
 
-          <div class="d-flex flex-column justify-content-center align-items-center align-items-md-end px-3 order-1 order-md-2">
+          <div class="d-flex flex-column justify-content-center align-items-center align-items-md-end px-3 order-1 order-md-2 scroll-animate-right">
             <div class="d-flex align-items-center gap-3 justify-content-center mb-3">
               <div class="gold-ball"></div>
                       <h4 class="text-center">Make money between classes</h4>
@@ -474,8 +474,8 @@
       <!-- Contact Form Section -->
       <section class="w-100 py-5 px-3">
         <div class="container p-5 gap-5 d-flex flex-column flex-md-row align-items-center justify-content-center">
-          <img src="./images/people/phone-guy.png" alt="phone-guy" class="img-fluid order-2 order-md-1" style="max-width: 822px; width: 100%;">
-          <div class="d-flex flex-column gap-4 order-1 order-md-2">
+          <img src="./images/people/phone-guy.png" alt="phone-guy" class="img-fluid order-2 order-md-1 scroll-animate-left" style="max-width: 822px; width: 100%;">
+          <div class="d-flex flex-column gap-4 order-1 order-md-2 scroll-animate-right">
             <h3 class="mb-4 form-title">Need Help? We're Here for You</h3>
             
             <!-- Contact Form -->
@@ -592,6 +592,24 @@
             });
           });
         });
+        
+        // Scroll-triggered animations
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate');
+            }
+          });
+        }, observerOptions);
+        
+        // Observe all scroll animation elements
+        const scrollElements = document.querySelectorAll('.scroll-animate-left, .scroll-animate-right, .scroll-animate-bottom');
+        scrollElements.forEach(el => observer.observe(el));
       });
     </script>
 </body>
