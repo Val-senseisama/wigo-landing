@@ -10,14 +10,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link rel="icon" href="./images/wigo-logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="./images/wigo-logo.png" type="image/x-icon">
     <title>wiGoMarket</title>
 </head>
 <body>
     
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid d-flex flex-row align-items-center justify-content-around mx-5 w-100">
+        <div class="container-fluid d-flex flex-row align-items-center justify-content-sm-around justify-content-between mx-md-5 w-100">
           <img class="navbar-brand" href="#"
           src="./images/wigo-logo.png"
+          class="img-fluid"
           />
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,20 +54,20 @@
       </nav>
 
       <section class="gradient-section w-100 p-3">
-<div class="d-flex flex-row align-items-center justify-content-center w-100 row">
-    <div class="col-2">
+<div class="d-flex flex-row flex-column-md align-items-center justify-content-center w-100 row">
+    <div class="col-2 col-12 col-md-2">
 
-    <img src="./images/wigo-cart.svg" alt="" class="landing-img ms-auto">
+    <img src="./images/wigo-cart.svg" alt="" class="landing-img ms-auto ms-md-auto d-none d-lg-block">
     </div>
-    <div class="d-flex flex-column align-items-center justify-content-center col-7 gap-3">
+    <div class="d-flex flex-column align-items-center justify-content-center col-7 col-12 col-lg-7 gap-3">
 <h1 class="big-text text-center">
-    Grow Your <span class="red-text">Sales on Campus</span><br>
+    Grow Your <span class="red-text">Sales on Campus</span><br class="d-none d-md-block">
      with wiGO MARKET
 </h1>
 <p class="md-text text-center">
-    A student marketplace that helps vendors reach more buyers, get fast deliveries <br> and receive secure payments.
+    A student marketplace that helps vendors reach more buyers, get fast deliveries <br class="d-none d-md-block"> and receive secure payments.
 </p>
-<div class="d-flex flex-row align-items-center justify-content-center gap-3">
+<div class="d-flex flex-row flex-column-sm align-items-center justify-content-center gap-3">
     <button class=" bg-transparent green-button green-text px-5">
         Shop as a Student
     </button>
@@ -73,15 +76,15 @@
     </button>
 </div>
     </div>
-    <div class="col-2">
+    <div class="col-2 col-12 col-md-2">
 
-    <img src="./images/wigo-fruit.svg" alt="" class=" me-auto special">
+    <img src="./images/wigo-fruit.svg" alt="" class=" me-auto me-md-auto special d-none d-lg-block">
     </div>
 </div>
 
-<div class="d-flex flex-row gap-2 align-items-baseline p-5 test">
+<div class="d-flex flex-row gap-2 align-items-baseline justify-content-center p-5 test">
     <img src="./images/test-1.png" class="test-1" alt="">
-    <img src="./images/test-2.png" class="test-2" alt="">
+    <img src="./images/test-2.png" class="test-2" altaround="">
     <img src="./images/test-3.png" class="test-3" alt="">
     <img src="./images/test-4.png" class="test-4" alt="">
     <img src="./images/test-5.png" class="test-5" alt="">
@@ -90,7 +93,7 @@
 </div>
 
 <h4 class="text-center fw-bold">Top shops on wiGO</h4>
-<div class="d-flex flex-row gap-2 align-items-baseline pb-5 pt-3 top-shop">
+<div class="d-flex flex-row gap-3 align-items-baseline justify-content-center pb-5 pt-3 top-shop">
     <div class="d-flex flex-column align-items-center">
         <img src="./images/top=shops/t1.png" alt="">
         <p>TrendyFoots NG</p>
@@ -128,14 +131,14 @@
 
       </section>
 
-      <section class="w-100 py-5 d-flex align-items-center justify-content-center gap-5">
+      <section class="w-100 py-5 d-flex flex-column flex-md-row align-items-center justify-content-center gap-5">
         <div class=" round-card">
             <h1 class="big-text red-text mb-5">About Us</h1>
             <p>wiGO MARKET is a campus-based marketplace built for students, by students. We connect buyers, vendors, and riders in one trusted platform that makes shopping, selling, and delivery seamless within universities.</p>
         </div>
 
         <div class=" round-card">
-            <div class="py-5 mx-auto px-5">
+            <div class="py-md-5 mx-auto px-md-5">
                 <h3 class="green-text mb-5">Our Mission</h3>
                 <p>to empower student entrepreneurs, make campus shopping safer and faster, and create earning opportunities for riders.</p>
             </div>
@@ -194,7 +197,7 @@
             <div class="v-dash d-none d-md-block"></div>
             
             <!-- Right Column -->
-            <div class="col-md-6 ps-md-5">
+            <div class="col-md-6 ps-md-5 d-flex flex-column d-md-block justify-content-md-end">
 
                 <!-- Step 1 -->
                 <div class="d-flex flex-column gap-4 mb-5 step-card">
@@ -232,18 +235,18 @@
         <div class="container">
 
         
-        <div class="d-flex flex-row align-items-center gap-5">
-          <img src="./images/people/buyer.png" alt="" class="px-3 img-fluid">
+        <div class="d-flex flex-column flex-md-row align-items-center gap-5">
+          <img src="./images/people/buyer.png" alt="" class="px-3 img-fluid order-2 order-md-1">
 
-          <div class="d-flex flex-column justify-content-center align-items-end px-3 ">
+          <div class="d-flex flex-column justify-content-center align-items-center align-items-md-end px-3 order-1 order-md-2">
             <div class="d-flex align-items-center gap-3 justify-content-center mb-3">
               <div class="gold-ball"></div>
                       <h4 class="text-center">Shop Anything, Anytime on Campus</h4>
                       <div class="gold-ball"></div>
             </div>
 
-            <h1 class="big-text red-text">For Buyers</h1>
-            <p class="text-end">Shop safely on a verified student marketplace where you can order food, fashion, gadgets, and more. With fast campus delivery straight to your hostel or class and flexible payment options.</p>
+            <h1 class="big-text red-text text-center text-md-end">For Buyers</h1>
+            <p class="text-center text-md-end">Shop safely on a verified student marketplace where you can order food, fashion, gadgets, and more. With fast campus delivery straight to your hostel or class and flexible payment options.</p>
             <button class="green-button px-5">
               Find What you need <i class="fa-solid fa-arrow-right text-white"></i>
           </button>
@@ -251,39 +254,39 @@
         </div>
 
 
-        <div class="d-flex flex-row align-items-center gap-5">
-          <div class="d-flex flex-column justify-content-center align-items-end px-3 ">
+        <div class="d-flex flex-column flex-md-row align-items-center gap-5">
+          <div class="d-flex flex-column justify-content-center align-items-center align-items-md-end px-3 order-1 order-md-1">
             <div class="d-flex align-items-center gap-3 justify-content-center mb-3">
               <div class="gold-ball"></div>
                       <h4 class="text-center">Turn Your Products Into Profits</h4>
                       <div class="gold-ball"></div>
             </div>
 
-            <h1 class="big-text red-text">Become a Seller</h1>
-            <p class="text-end">Create your store and get verified in minutes, then reach thousands of students instantly with your products. Focus on sales while riders handle your deliveries.</p>
+            <h1 class="big-text red-text text-center text-md-end">Become a Seller</h1>
+            <p class="text-center text-md-end">Create your store and get verified in minutes, then reach thousands of students instantly with your products. Focus on sales while riders handle your deliveries.</p>
             <button class="green-button px-5">
               Start Selling Now <i class="fa-solid fa-arrow-right text-white"></i>
           </button>
           </div> 
           
-          <img src="./images/people/seller.png" alt="" class="px-3 img-fluid">
+          <img src="./images/people/seller.png" alt="" class="px-3 img-fluid order-2 order-md-2">
 
         
         </div>
       
       
-        <div class="d-flex flex-row align-items-center gap-5">
-          <img src="./images/people/dispatch.png" alt="" class="px-3 img-fluid">
+        <div class="d-flex flex-column flex-md-row align-items-center gap-5">
+          <img src="./images/people/dispatch.png" alt="" class="px-3 img-fluid order-2 order-md-1">
 
-          <div class="d-flex flex-column justify-content-center align-items-end px-3 ">
+          <div class="d-flex flex-column justify-content-center align-items-center align-items-md-end px-3 order-1 order-md-2">
             <div class="d-flex align-items-center gap-3 justify-content-center mb-3">
               <div class="gold-ball"></div>
                       <h4 class="text-center">Make money between classes</h4>
                       <div class="gold-ball"></div>
             </div>
 
-            <h1 class="big-text red-text">Earn by Delivering</h1>
-            <p class="text-end">Join wiGO MARKET as a rider and earn while helping students get their orders faster. Accept deliveries on your own schedule, pick up items from vendors.</p>
+            <h1 class="big-text red-text text-center text-md-end">Earn by Delivering</h1>
+            <p class="text-center text-md-end">Join wiGO MARKET as a rider and earn while helping students get their orders faster. Accept deliveries on your own schedule, pick up items from vendors.</p>
             <button class="green-button px-5">
               Beome a wiGO Rider <i class="fa-solid fa-arrow-right text-white"></i>
           </button>
@@ -299,7 +302,7 @@
           <h3>Trusted by Students </h3>
           <h3> Loved by Vendors</h3>
 
-          <div class="d-flex gap-5 align-items-center">
+          <div class="d-flex flex-column flex-md-row gap-5 align-items-center">
             <div class="testimonial-card">
               <div class="testimonial-inner">
                 <div class="stars">
@@ -345,7 +348,7 @@
           </div>
           
 
-          <div class="d-flex gap-5 align-items-center">
+          <div class="d-flex flex-column flex-md-row gap-5 align-items-center">
             <div class="testimonial-card">
               <div class="testimonial-inner">
                 <div class="stars">
@@ -402,7 +405,7 @@
 
              <h2 class="text-center mb-5 big-text">FAQs</h2>
           
-          <div class="faq-categories mb-5">
+          <div class="faq-categories mb-5 flex-row flex-sm-column">
             <button class="btn btn-outline-primary active text-start" data-category="buyers">For Buyers</button>
             <button class="btn btn-outline-primary text-start" data-category="sellers">For Sellers</button>
             <button class="btn btn-outline-primary text-start" data-category="riders">For Riders</button>
@@ -469,9 +472,9 @@
 
       <!-- Contact Form Section -->
       <section class="w-100 py-5 px-3">
-        <div class="container p-5 gap-5 d-flex align-items-center justify-content-center">
-          <img src="./images/people/phone-guy.png" alt="phone-guy" class="img-fluid" style="max-width: 822px;">
-          <div class="d-flex flex-column gap-4">
+        <div class="container p-5 gap-5 d-flex flex-column flex-md-row align-items-center justify-content-center">
+          <img src="./images/people/phone-guy.png" alt="phone-guy" class="img-fluid order-2 order-md-1" style="max-width: 822px; width: 100%;">
+          <div class="d-flex flex-column gap-4 order-1 order-md-2">
             <h3 class="mb-4 form-title">Need Help? We're Here for You</h3>
             
             <!-- Contact Form -->
@@ -513,8 +516,8 @@
 
 
 
-          <div class="d-flex flex-column align-items-end">
-            <div class="d-flex align-items-center">
+          <div class="d-flex flex-column align-items-start align-items-sm-end w-100">
+            <div class="d-flex align-items-sm-center">
               <div class="p-2">
                 <p class="mb-3">Links</p>
 

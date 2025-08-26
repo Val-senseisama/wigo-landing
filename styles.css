@@ -2,6 +2,8 @@ body {
     width: 100vw;
     max-width: 100dvw !important;
     overflow-x: hidden;
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
 }
 
 .green-text {
@@ -67,22 +69,30 @@ body {
     margin: 0 80px;
 }
 
-.test img {
-    width: 50%;   /* shrink width by half */
+@media (min-width: 1200px) {
+  .test img {
+    width: 50%;   
   height: auto;
+  } 
+   
+   .test img:nth-child(3), .test img:last-child  {
+    width: 40%; 
+    height: 230px !important;
   }
+}
+
+
 
   .top-shop img {
-    width: 50%;   /* shrink width by half */
+    width: 78px;   
+    height: 78px;
+    /* shrink width by half */
   background-color: #fff;
   border-radius: 90%;
   }
       
 
-  .test img:nth-child(3), .test img:last-child  {
-    width: 40%; 
-    height: 230px !important;
-  }
+
   
 
 .round-card {
@@ -420,3 +430,616 @@ letter-spacing: -0.1px;
     border-radius: 50%;
     border:  1px solid #666666;
   }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* General mobile adjustments */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Custom responsive utility classes */
+  .flex-column-md {
+    flex-direction: column !important;
+  }
+  
+  .flex-column-sm {
+    flex-direction: column !important;
+  }
+  
+  .order-1 {
+    order: 1 !important;
+  }
+  
+  .order-2 {
+    order: 2 !important;
+  }
+  
+  .text-center-md {
+    text-align: center !important;
+  }
+  
+  .text-end-md {
+    text-align: end !important;
+  }
+  
+  .align-items-center-md {
+    align-items: center !important;
+  }
+  
+  .align-items-end-md {
+    align-items: end !important;
+  }
+  
+  /* Navbar mobile adjustments */
+  .navbar {
+    padding: 15px;
+  }
+  
+  .navbar-brand {
+    height: 28px;
+    width: 160px;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  
+  .d-flex.flex-row.gap-4 {
+    flex-direction: column !important;
+    gap: 15px !important;
+    margin-top: 20px;
+  }
+  
+  /* Mobile navbar improvements */
+  .navbar-collapse {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    margin-top: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-toggler {
+    border: none;
+    padding: 8px;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(86, 134, 42, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+  /* Hero section mobile adjustments */
+  .gradient-section .row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  
+  .gradient-section .col-2,
+  .gradient-section .col-7 {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  
+  .big-text {
+    font-size: 36px !important;
+    line-height: 1.2;
+  }
+  
+  .md-text {
+    font-size: 18px !important;
+    padding: 0 20px;
+  }
+  
+  .md-text br {
+    display: none;
+  }
+  
+  .landing-img {
+    height: 250px;
+    width: 220px;
+    margin: 0 auto;
+  }
+  
+  .special {
+    position: static;
+    right: auto;
+    margin: 0 auto;
+  }
+  
+  /* Button adjustments for mobile */
+  .d-flex.flex-row.gap-3 {
+    gap: 15px !important;
+    width: 100%;
+  }
+  
+  .green-button {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    min-height: 48px; /* Touch-friendly button height */
+    font-size: 16px;
+  }
+  
+  /* Testimonials section mobile */
+  .test, .top-shop {
+    margin: 0 20px;
+    justify-content: center;
+  }
+  
+
+  .top-shop {
+    justify-content: center !important;
+    align-items: flex-start;
+  }
+  
+  .top-shop > div {
+    width: calc(50% - 10px);
+    text-align: center;
+    min-width: 120px;
+    flex-shrink: 0;
+    margin-bottom: 15px;
+  }
+  
+    .top-shop img {
+      width: 78px !important;
+      height: 78px !important;
+      object-fit: cover;
+    }
+  
+  .top-shop p {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+  
+  /* About section mobile */
+  .round-card {
+    width: 100% !important;
+    height: auto !important;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 24px;
+  }
+  
+  .round-card p {
+    font-size: 18px;
+  }
+  
+  /* How it works section mobile */
+  .step-card {
+    height: auto !important;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  
+  .step-card h4 {
+    font-size: 20px;
+  }
+  
+  .step-card p {
+    font-size: 16px;
+  }
+  
+  .phone {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .v-dash {
+    display: none !important;
+  }
+  
+  /* Users section mobile */
+  section.users img {
+    width: 100% !important;
+    max-width: 400px;
+    margin: 0 auto 30px;
+  }
+  
+  section.users .d-flex.flex-row {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  
+  section.users .d-flex.flex-column {
+    align-items: center !important;
+    text-align: center;
+  }
+  
+  section.users h4 {
+    font-size: 16px;
+  }
+  
+  section.users p {
+    font-size: 18px;
+    text-align: center !important;
+  }
+  
+  /* Testimonials mobile */
+  section.testimonials h3 {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+  
+  .testimonial-card {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+  
+  .d-flex.gap-5 {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  
+  /* FAQ section mobile */
+  .faq-container {
+    flex-direction: column !important;
+   
+    justify-content: center;
+    
+  }
+  
+  .faq-categories .btn {
+    width: auto;
+    min-width: 150px;
+    margin: 5px;
+    min-height: 44px; /* Touch-friendly button height */
+  }
+  
+  .accordion {
+    width: 100% !important;
+  }
+  
+  /* Contact form mobile */
+  .container.p-5.gap-5 {
+    flex-direction: column !important;
+    gap: 30px !important;
+    padding: 30px 20px !important;
+  }
+  
+  .container.p-5.gap-5 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .form-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  /* Form inputs mobile optimization */
+  .form-control {
+    min-height: 48px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  .input-group-text {
+    min-height: 48px;
+  }
+  
+  /* Footer mobile */
+ 
+
+  
+  .last {
+    flex-direction: column !important;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  /* Improved spacing for mobile */
+  .py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  .px-3 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .gap-5 {
+    gap: 2rem !important;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Desktop responsive utility classes */
+  .flex-column-md {
+    flex-direction: row !important;
+  }
+  
+  .flex-column-sm {
+    flex-direction: row !important;
+  }
+  
+  .order-md-1 {
+    order: 1 !important;
+  }
+  
+  .order-md-2 {
+    order: 2 !important;
+  }
+  
+  .text-center-md {
+    text-align: center !important;
+  }
+  
+  .text-end-md {
+    text-align: end !important;
+  }
+  
+  .align-items-center-md {
+    align-items: center !important;
+  }
+  
+  .align-items-end-md {
+    align-items: end !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small devices */
+  .big-text {
+    font-size: 28px !important;
+  }
+  
+  .md-text {
+    font-size: 16px !important;
+  }
+  
+  .landing-img {
+    height: 200px;
+    width: 180px;
+  }
+  
+  
+  
+  .top-shop > div {
+    width: calc(50% - 5px);
+    min-width: 100px;
+  }
+  
+  .top-shop img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .top-shop p {
+    font-size: 12px;
+  }
+  
+  .round-card {
+    padding: 20px 15px;
+  }
+  
+  .step-card {
+    padding: 15px;
+  }
+  
+  .phone {
+    height: 250px;
+  }
+  
+  section.users img {
+    max-width: 300px;
+  }
+  
+  .form-title {
+    font-size: 24px;
+  }
+  
+  .faq-categories .btn {
+    min-width: 120px;
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Very small devices */
+  .big-text {
+    font-size: 24px !important;
+  }
+  
+  .landing-img {
+    height: 180px;
+    width: 160px;
+  }
+  
+  .test img {
+    width: 40% !important;
+  }
+  
+  .test img:nth-child(3), .test img:last-child {
+    width: 40% !important;
+    height: 100px !important;
+  }
+  
+  .navbar-brand {
+    height: 24px;
+    width: 140px;
+  }
+  
+  .green-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+  
+  /* Extra small device optimizations */
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  .px-3 {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
+/* Landscape orientation support for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .big-text {
+    font-size: 32px !important;
+  }
+  
+  .landing-img {
+    height: 200px;
+    width: 180px;
+  }
+  
+  .navbar {
+    padding: 10px 15px;
+  }
+  
+  .navbar-brand {
+    height: 24px;
+    width: 140px;
+  }
+  
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
+/* High DPI display support */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .landing-img,
+  .phone,
+  section.users img,
+  .testimonial-card img,
+  .user-avatar {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .green-button,
+  .faq-categories,
+  footer {
+    display: none !important;
+  }
+  
+  .big-text {
+    font-size: 24px !important;
+    color: #000 !important;
+  }
+  
+  .red-text {
+    color: #000 !important;
+  }
+  
+  .green-text {
+    color: #000 !important;
+  }
+  
+  body {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* Passive scrolling animations for mobile */
+@media (max-width: 1200px) {
+  .test {
+    overflow: hidden;
+    position: relative;
+    will-change: transform;
+    white-space: nowrap;
+  }
+  
+  .test img {
+    display: inline-block;
+    animation: scrollLeft 20s linear infinite;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    margin-right: 20px;
+  }
+  
+  .top-shop {
+    overflow: hidden;
+    position: relative;
+    will-change: transform;
+    white-space: nowrap;
+  }
+  
+  .top-shop > div {
+    display: inline-block;
+    animation: scrollRight 25s linear infinite;
+    will-change: transform;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    margin-right: 20px;
+  }
+  
+  /* Left scrolling animation for testimonials */
+  @keyframes scrollLeft {
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(-100vw); }
+  }
+  
+  /* Right scrolling animation for top shops */
+  @keyframes scrollRight {
+    0% { transform: translateX(-100vw); }
+    100% { transform: translateX(100vw); }
+  }
+  
+  /* Pause animation on hover for better UX */
+  .test:hover img,
+  .top-shop:hover > div {
+    animation-play-state: paused;
+  }
+  
+  /* Ensure images maintain their styling during animation */
+  
+  
+  .top-shop > div {
+    width: auto !important;
+    min-width: 120px;
+    margin: 0 15px;
+  }
+  
+  .top-shop img {
+    width: 78px !important;
+    height: 78px !important;
+  }
+  
+  /* Smooth animation transitions */
+  .test img,
+  .top-shop > div {
+    transition: transform 0.3s ease-out;
+  }
+  
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    .test img,
+    .top-shop > div {
+      animation: none;
+    }
+  }
+}
